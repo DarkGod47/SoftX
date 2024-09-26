@@ -1,22 +1,22 @@
 #app-mount {
-	.tabBody-2dgbAs::before {
+	.tabBody_c2739c::before {
 		content: none;
 	}
-	.container-2cd8Mz {
+	.container_c2739c {
 		background: transparent;
-		.title-338goq {
+		.title_d1da5f {
 			margin: 0;
 			padding: 16px;
 		}
 	}
-	.peopleColumn-1wMU14 {
+	.peopleColumn_c2739c {
 		background: var(--bg-secondary);
 		border-right: 1px solid var(--border);
 	}
-	.peopleList-2VBrVI {
+	.peopleList_e0840f {
 		margin: 0;
 	}
-	.peopleListItem-u6dGxF {
+	.peopleListItem_d51464 {
 		margin: 0;
 		padding: 0 0 0 16px;
 		border-color: var(--border);
@@ -28,13 +28,13 @@
 			background: var(--background-modifier-hover);
 		}
 	}
-	.userInfo-2WpsYG {
+	.userInfo_f3939d {
 		overflow: visible;
 	}
-	.actions-OJh0Kn {
+	.actions_ea0e6d {
 		height: 100%;
 	}
-	.actionButton-3-B2x- {
+	.actionButton_e01b91 {
 		height: 100%;
 		width: 42px;
 		border-radius: 0;
@@ -45,15 +45,15 @@
 		}
 	}
 
-	.addFriendInputWrapper-kkoSV9 {
+	.addFriendInputWrapper_de812f {
 		background: var(--input-background);
 		border: 2px solid transparent;
 		&:hover {
-			border-color: rgb(255 255 255 / .05);
+			border-color: rgb(255 255 255 / 0.05);
 		}
 		&:focus-within {
 			border-color: rgb(var(--accent));
-			box-shadow: 0 0 calc(var(--glow-intensity) * 20px) calc(var(--glow-intensity) * 5px) rgb(var(--accent), .25);
+			box-shadow: 0 0 calc(var(--glow-intensity) * 20px) calc(var(--glow-intensity) * 5px) rgb(var(--accent), 0.25);
 		}
 	}
 }

@@ -1,27 +1,28 @@
 #app-mount {
-	.panels-3wFtMD {
+	.panels_a4d4d9 {
 		background: transparent;
 		padding: 0;
-	}
-	
-	// Connected voice
-	.wrapper-3Hk9OB:not(:empty) {
 		border-top: 1px solid var(--border);
 	}
-	.container-1zzFcN {
+
+	// Connected voice
+	.wrapper_adcaac:not(:empty) {
+		border-top: 1px solid var(--border);
+	}
+	.container_adcaac {
 		background: transparent;
 		border: none;
 		padding: 0;
 		& > div:first-child {
 			padding: 0;
 			border-bottom: 1px solid var(--border);
-			.inner-llGtyq {
+			.inner_adcaac {
 				padding: 16px 18px;
 			}
-			& > .flex-2S1XBF {
+			& > .flex_dc333f {
 				margin: 0;
 			}
-			.button-12Fmur {
+			.button_adca65 {
 				height: 63px;
 				border-radius: 0;
 				width: 42px;
@@ -31,8 +32,9 @@
 			}
 		}
 	}
-	.actionButtons-2vEOUh {
+	.actionButtons_adcaac {
 		padding: 0;
+		& > div > button,
 		& > button {
 			margin: 0;
 			border-radius: 0;
@@ -40,8 +42,11 @@
 			height: 42px;
 			font-size: 0;
 			transition: none;
+			.contents_dd4f85 {
+				display: flex;
+			}
 			svg {
-				margin: 0;
+				margin: auto;
 				color: var(--interactive-normal);
 				transition: var(--transition);
 				transition-property: color;
@@ -55,26 +60,27 @@
 		}
 	}
 
-	.activityPanel-9icbyU {
-		border-top: 1px solid var(--border);
-		border-bottom: none;
+	.activityPanel_a4d4d9 {
+		border-bottom: 1px solid var(--border);
 		padding: 16px;
+		background: transparent;
 	}
-	
+
 	// Voice users
-	.voiceUsers-3gPcwY {
+	.voiceUsers_adcaac {
 		padding: 10px 16px;
 		border-bottom: 1px solid var(--border);
 	}
 
 	// User area
-	.container-YkUktl {
+	.container_b2ca13 {
 		background: transparent;
 		padding: 0 16px;
 		height: 64px;
 		border-top: 1px solid var(--border);
 	}
-	.avatarWrapper-1B9FTW {
+	.avatarWrapper_b2ca13 {
+		justify-content: center;
 		flex: 1;
 	}
 }

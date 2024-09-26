@@ -5,23 +5,23 @@
 	--server-hover-colour: 255, 255, 255;
 	--server-selected-colour: var(--accent, 0, 231, 169);
 	--server-spacing: 16px;
-	--server-glow-intensity: 1;
+	--server-glow-intensity: var(--glow-intensity, 1);
 }
 
 #app-mount {
-	.wrapper-38slSD ul[role="group"] {
+	.wrapper_bc7085 ul[role='group'] {
 		height: auto !important;
 	}
 
-	.scroller-3X7KbA > div[style]:not([class]) {
+	.scroller_fea3ef > div[style]:not([class]) {
 		margin-bottom: var(--server-spacing);
 	}
-	
+
 	// Container
-	.listItem-3SmSlK {
+	.listItem_c96c45 {
 		width: 100%;
 		margin-bottom: var(--server-spacing);
-		[class*="pill"] {
+		[class*='pill'] {
 			left: 50%;
 			top: 50%;
 			transform: translate(-50%, -50%);
@@ -29,7 +29,7 @@
 			height: calc(var(--server-size, 48px) + 8px);
 			overflow: visible;
 			margin-left: -2px;
-			.item-2LIpTv {
+			.item_c4cd66 {
 				height: 100% !important;
 				width: 100%;
 				margin: 0;
@@ -42,41 +42,58 @@
 				transition-property: box-shadow;
 			}
 			@for $i from 0 through 8 {
-				span[style*="height: #{$i}"] {
-					box-shadow: 0 0 calc(var(--server-glow-intensity) * 15px) calc(var(--server-glow-intensity) * 5px) rgb(var(--server-unread-colour), .25);
+				span[style*='height: #{$i}'] {
+					box-shadow: 0
+						0
+						calc(var(--server-glow-intensity) * 15px)
+						calc(var(--server-glow-intensity) * 5px)
+						rgb(var(--server-unread-colour), 0.25);
 					border-color: rgb(var(--server-unread-colour));
 				}
 			}
 			// Hovered
 			@for $i from 9 through 20 {
-				span[style*="height: #{$i}"] {
+				span[style*='height: #{$i}'] {
 					border-color: rgb(var(--server-hover-colour));
-					box-shadow: 0 0 calc(var(--server-glow-intensity) * 15px) calc(var(--server-glow-intensity) * 5px) rgb(var(--server-hover-colour), .25);
+					box-shadow: 0
+						0
+						calc(var(--server-glow-intensity) * 15px)
+						calc(var(--server-glow-intensity) * 5px)
+						rgb(var(--server-hover-colour), 0.25);
 				}
 			}
 			// Selected
 			@for $i from 21 through 40 {
-				span[style*="height: #{$i}"] {
+				span[style*='height: #{$i}'] {
 					transform: scale(1) !important;
 					border-color: rgb(var(--server-selected-colour));
-					box-shadow: 0 0 calc(var(--server-glow-intensity) * 15px) calc(var(--server-glow-intensity) * 5px) rgb(var(--server-selected-colour), .25);
+					box-shadow: 0
+						0
+						calc(var(--server-glow-intensity) * 15px)
+						calc(var(--server-glow-intensity) * 5px)
+						rgb(var(--server-selected-colour), 0.25);
 				}
 			}
 		}
 	}
 
 	// Active state
-	.blobContainer-ikKyFs,
-	.listItemWrapper-3d87LP {
-		transition: var(--transition, .15s ease);
+	.blobContainer_a5ad63,
+	.listItemWrapper_dfb2f8 {
+		transition: var(--transition, 0.15s ease);
 		transition-property: transform;
 		&:active {
-			transform: scale(.9);
+			transform: scale(0.9);
 		}
 	}
-	
-	.svg-2ifYOU foreignObject {
+
+	.svg_c5f96a foreignObject {
 		border-radius: var(--server-roundness, 50%);
 		mask: none !important;
 	}
+}
+
+// Hide Broken Discoverable Servers Ring
+.pill_db6521 {
+	display: none;
 }

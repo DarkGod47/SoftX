@@ -1,10 +1,10 @@
 #app-mount {
 	// New messages
-	.newMessagesBar-1hF-9G {
+	.newMessagesBar_cf58b5 {
 		top: 12px;
 		right: 12px;
 		left: 12px;
-		background: rgb(var(--accent), .1);
+		background: rgb(var(--accent), 0.1);
 		border: 1px solid var(--border);
 		border-radius: 0;
 		box-shadow: none;
@@ -12,22 +12,22 @@
 		backdrop-filter: blur(3px);
 		border-radius: 6px;
 	}
-	.barButtonBase-Sk2mdB {
+	.barButtonBase_cf58b5 {
 		height: auto;
 		padding: 10px 16px;
 	}
-	.unreadBar-elBRZx {
+	.unreadBar_c43953 {
 		opacity: 1;
 		visibility: visible;
-		&[aria-hidden="true"] {
+		&[aria-hidden='true'] {
 			opacity: 0;
 			visibility: hidden;
 		}
 	}
-	
+
 	// Old messages
-	.jumpToPresentBar-1cEnH0 {
-		background: rgb(var(--accent), .1);
+	.jumpToPresentBar_cf58b5 {
+		background: rgb(var(--accent), 0.1);
 		border: 1px solid var(--border);
 		padding: 0;
 		opacity: 1;
@@ -38,7 +38,7 @@
 	}
 
 	// Join thread
-	.chatHeaderBar-2fUORh {
+	.chatHeaderBar_e2f46e {
 		background: var(--bg-primary);
 		border-bottom: 1px solid var(--border);
 	}

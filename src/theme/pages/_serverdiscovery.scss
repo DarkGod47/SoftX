@@ -7,25 +7,25 @@
 		padding: 0;
 		position: relative;
 		&.selectedCategoryItem-FHKU_o {
-			.layout-1qmrhw {
-				background: rgb(var(--accent), .1);
+			.layout_d808b0 {
+				background: rgb(var(--accent), 0.1);
 				color: rgb(var(--accent));
 			}
 			path {
 				fill: rgb(var(--accent));
 			}
-			.avatar-6qzftW,
-			.content-1U25dZ {
+			.avatar_d808b0,
+			.content_d808b0 {
 				filter: drop-shadow(0 0 calc(var(--glow-intensity) * 5px) rgb(var(--accent)));
 			}
 			&::before {
-				content: "";
+				content: '';
 				position: absolute;
 				left: 0;
 				height: 100%;
 				width: 2px;
 				background: rgb(var(--accent));
-				box-shadow: 0 0 calc(var(--glow-intensity) * 15px) calc(var(--glow-intensity) * 5px) rgb(var(--accent), .2);
+				box-shadow: 0 0 calc(var(--glow-intensity) * 15px) calc(var(--glow-intensity) * 5px) rgb(var(--accent), 0.2);
 			}
 		}
 	}
@@ -33,7 +33,7 @@
 	.viewWrapper-2sTW6t {
 		max-width: unset;
 	}
-	.pageWrapper-2PwDoS {
+	.pageWrapper_a3a4ce {
 		background: var(--bg-secondary);
 		.scroller-3j5xK2 {
 			padding: 0 !important;
@@ -58,7 +58,7 @@
 			display: none;
 		}
 	}
-	.searchBox-pyIJJj {
+	.searchBox__56feb {
 		overflow: visible;
 	}
 	.searchBox-31Zv9h {
@@ -68,21 +68,21 @@
 		padding: 0;
 		border: none;
 	}
-	.searchIcon-34RNw9 {
+	.searchIcon_d1a3c1 {
 		display: none;
 	}
 	.search-25t1e9 {
 		width: 600px !important;
 	}
-	.clear-1JYfB5 {
+	.clear__65069 {
 		position: absolute;
 		right: -24px;
 	}
-	.searchBoxInput-P0mWHW {
+	.searchBoxInput__56498 {
 		padding-right: 52px !important;
 		width: 100% !important;
 	}
-	.cta-25g9OT {
+	.cta_f18d68 {
 		position: absolute;
 		margin-right: 0;
 		left: 50%;
@@ -90,19 +90,19 @@
 		top: 56px;
 	}
 
-	.guildListSection-27K5In {
+	.guildListSection_ac51fa {
 		padding: 248px 24px 24px;
 		box-sizing: border-box;
 	}
-	.guildList-3-B_6n {
-		grid-template-columns: repeat(auto-fill,minmax(290px, 1fr));
+	.guildList_ac51fa {
+		grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
 	}
 	.footer-26kPv_ {
 		padding: 24px;
 	}
-	.card-2TuZPZ {
+	.card_e90879 {
 		border-radius: 6px;
-		background: rgb(255 255 255 / .05);
+		background: rgb(255 255 255 / 0.05);
 		&:hover {
 			box-shadow: var(--shadow-lg);
 		}

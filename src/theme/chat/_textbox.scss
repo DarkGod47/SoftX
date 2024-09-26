@@ -1,11 +1,28 @@
 @use '../assets';
 
 #app-mount {
-	.form-3gdLxP {
+	.form_a7d72e {
 		&::before {
 			content: none;
 		}
-		.button-f2h6uQ {
+		.button_df39bd {
+			// Fixed Apps and Commands Button - Lion
+			background: var(--input-background);
+			width: 58px !important;
+			height: 58px !important;
+			border: 2px solid transparent;
+			transition: var(--transition);
+			transition-property: border-color, box-shadow;
+			&.buttonActive_df39bd {
+				border-color: rgb(var(--accent));
+				box-shadow: 0 0 calc(var(--input-glow-intensity) * 12px) calc(var(--input-glow-intensity) * 2px)
+				rgb(var(--accent), 0.25);
+			}
+		}
+		.attachButtonInner_f298d4 {
+			margin-bottom: 5px;
+		}
+		.button_dd4f85 {
 			height: 100%;
 			// Gif Button
 			#icon {
@@ -22,12 +39,12 @@
 			&:hover #icon svg {
 				background: var(--interactive-normal);
 			}
-			&:not(.attachButton-_ACFSu) {
+			&:not(.attachButton_f298d4) {
 				svg {
 					transition: var(--transition);
 					transition-property: filter;
 				}
-				&.active-z80xEj {
+				&.active_f9af59 {
 					filter: drop-shadow(0 0 calc(var(--chat-glow-intensity) * 5px) rgb(var(--accent)));
 					svg {
 						background: rgb(var(--accent)) !important;
@@ -35,10 +52,10 @@
 				}
 			}
 		}
-		.emojiButton-1fMsf3 {
+		.emojiButton_d0696b {
 			padding: 0 4px;
 			max-height: 54px;
-			.sprite-2lxwfc {
+			.sprite_d91a75 {
 				width: 24px;
 				height: 24px;
 				mask: url(assets.$icon_emoji-happy) center/cover;
@@ -48,11 +65,11 @@
 				transition: var(--transition);
 				transition-property: background;
 			}
-			&:hover .sprite-2lxwfc {
+			&:hover .sprite_d91a75 {
 				background: var(--interactive-normal);
 			}
 		}
-		.stickerButton-1-nFh2 {
+		.stickerButton_d0696b {
 			padding: 0;
 			svg {
 				width: 24px !important;
@@ -70,34 +87,36 @@
 			}
 		}
 	}
-	.channelTextArea-1FufC0 {
+	.channelTextArea_a7d72e {
 		background: var(--input-background);
 		border: 2px solid transparent;
 		border-radius: 6px;
 		transition: var(--transition);
 		transition-property: border-color, box-shadow;
 
-		.divider-2rZFJK {
-			border-top: 2px solid rgb(255 255 255 / .05);
+		.divider_c2654d {
+			border-top: 2px solid rgb(255 255 255 / 0.05);
 			margin: 0 0 0 12px;
 		}
-		
+
 		&:hover {
-			border-color: rgb(255 255 255 / .05);
+			border-color: rgb(255 255 255 / 0.05);
 		}
 		&:focus-within {
 			border-color: rgb(var(--accent));
-			box-shadow: 0 0 calc(var(--input-glow-intensity) * 20px) calc(var(--input-glow-intensity) * 5px) rgb(var(--accent), .25);
+			box-shadow: 0 0 calc(var(--input-glow-intensity) * 20px) calc(var(--input-glow-intensity) * 5px)
+				rgb(var(--accent), 0.25);
 		}
 	}
-	.slateTextArea-27tjG0,
-	.placeholder-1_mJY1 {
+	.slateTextArea_e52116,
+	.placeholder_a552a6 {
 		padding: 16px 0;
 	}
-	.scrollableContainer-15eg7h {
+	.scrollableContainer_d0696b {
 		background: transparent;
 	}
-	.attachButton-_ACFSu {
+	.attachButton_f298d4 {
+		height: 100%;
 		svg {
 			mask: url(assets.$icon_paper-clip) center/cover;
 			background: var(--interactive-muted);
@@ -110,7 +129,7 @@
 		&:hover svg {
 			background: var(--interactive-normal);
 		}
-		&[aria-expanded="true"] {
+		&[aria-expanded='true'] {
 			filter: drop-shadow(0 0 calc(var(--input-glow-intensity) * 5px) rgb(var(--accent)));
 			svg {
 				background: rgb(var(--accent)) !important;
@@ -118,7 +137,7 @@
 		}
 	}
 
-	.buttons-uaqb-5 {
+	.buttons_d0696b {
 		min-height: 54px;
 		& > button[aria-label] {
 			svg {
@@ -137,27 +156,27 @@
 	}
 
 	.upload-3GTSF9 {
-		background: rgb(255 255 255 / .02);
+		background: rgb(255 255 255 / 0.02);
 		border-radius: 6px;
 	}
 
 	// Replying
-	.attachedBars-2BCP3l {
+	.attachedBars_d0696b {
 		background: transparent;
 		border-radius: 6px 6px 0 0;
 	}
-	.replyBar-1oi75v,
-	.threadSuggestionBar-3ExSyc {
-		background: rgb(255 255 255 / .02);
+	.replyBar_b11c5e,
+	.threadSuggestionBar_b11c5e {
+		background: rgb(255 255 255 / 0.02);
 		border-bottom: 2px solid var(--border);
 	}
 
 	// Follow to get...
-	.wrapper-2SplAX {
+	.wrapper_faf5ab {
 		background: var(--input-background);
 		border-radius: 6px;
 		padding: 24px 0;
-		.buttonContainer-KMz3Ex {
+		.buttonContainer_faf5ab {
 			margin-right: 24px;
 		}
 	}
@@ -175,9 +194,9 @@ $sizes: (
 );
 @each $selector, $value in $sizes {
 	.font-size-#{$selector} {
-		.slateContainer-3x9zil,
+		.slateContainer_e52116,
 		.buttons-3JBrkn {
-			min-height: $value+px !important;
+			min-height: $value + px !important;
 		}
 	}
 }

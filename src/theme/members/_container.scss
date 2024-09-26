@@ -1,14 +1,14 @@
 #app-mount {
-	.membersWrap-3NUR2t {
+	.container_cbd271 {
+		background: transparent;
+	}
+	.membersWrap_cbd271 {
 		min-width: var(--members-width);
 		max-width: var(--members-width);
 		height: 100%;
 	}
-	.container-2o3qEW {
+	.members_cbd271 {
 		background: var(--bg-primary);
-	}
-	.members-3WRCEx {
-		background: transparent;
 		width: 100%;
 		& > div {
 			background: transparent;
@@ -16,7 +16,7 @@
 	}
 
 	// Fix group md members list
-	.content-1jQy2l > .membersWrap-3NUR2t > .members-3WRCEx {
+	.content_eed6a8 > .membersWrap_cbd271 > .members_cbd271 {
 		background: var(--bg-primary);
 	}
 }
